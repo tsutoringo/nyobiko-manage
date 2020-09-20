@@ -4,11 +4,17 @@
 [Releases](https://github.com/tsutoringo/nyobiko-manage/releases)
 に飛ぶ。
 Assetsを押す。
+
 yobiko-manage-v(Version).zip
+
 をダウンロードする。
+
 chrome://extensions
-にアクセスしアクセスしzipファイルをドラッグアンドドロップする。
+
+にアクセスしアクセスしzipファイルをドラッグアンドドロ
+
 多分正常に入れれる
+
 以上
 
 ## Project setup
