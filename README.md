@@ -4,7 +4,7 @@
 [Releases](https://github.com/tsutoringo/nyobiko-manage/releases)
 に飛ぶ。
 
-![image](https://user-images.githubusercontent.com/33830878/93715031-a254e300-fba1-11ea-9964-91485b094703.png)
+<img width="1439" alt="スクリーンショット 2020-09-21 0 28 03" src="https://user-images.githubusercontent.com/33830878/93715146-725a0f80-fba2-11ea-8417-8ee9c4ffa72c.png">
 
 をダウンロードする。
 
