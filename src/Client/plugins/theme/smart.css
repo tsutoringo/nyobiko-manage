@@ -1,0 +1,7 @@
+@import url(https://tsutoringo.github.io/nyobiko-manage/src/Client/plugins/theme/defaultTheme.css);
+
+:root {
+
+	--nav-bg-color: var(--background-tertiary);
+	--u-card-bg-color: var(--background-tertiary);
+}
