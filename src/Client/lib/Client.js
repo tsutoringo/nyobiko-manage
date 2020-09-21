@@ -1,8 +1,5 @@
 import pluginBase from '../plugins/pluginBase';
 
-/**
- *
- */
 class Client {
 	constructor (plugins, runScripts = false) {
 		this.plugins = [];
@@ -56,8 +53,18 @@ class Client {
 	runScripts () {
 		console.log('start enable plugins');
 		for (const plugin of this.plugins) {
-			if (plugin.enableArea.test(location.pathname) && plugin.config.enable) {
-				plugin.onEnable();
+			if (plugin.config.enable) {
+				if (typeof plugin.enableArea === 'function') {
+					if (plugin.enableArea(location)) {
+						plugin.onEnable();
+					}
+				} else if (Array.isArray(plugin.enableArea)) {
+					if (plugin.enableArea.some(area => (typeof area !== 'function' ? area.test(location.pathname) : area(location)))) {
+						plugin.onEnable();
+					}
+				} else if (plugin.enableArea.test(location.pathname)) {
+					plugin.onEnable();
+				}
 			}
 		}
 	}

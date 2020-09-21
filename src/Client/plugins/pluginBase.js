@@ -17,17 +17,17 @@ class PluginBase {
 		this.enableArea = enableArea;
 		this.version = version;
 		this._client = client;
-		if(this._client.config.plugins[this.id] == null) {
+		if (this._client.config.plugins[this.id] == null) {
 			this._client.setPluginConfig(this, defaultConfig);
 		}
 		this.config = this._client.config.plugins[this.id];
 	}
 
-	toggleEnable() {
+	toggleEnable () {
 		!this.config.enabled ? this._client.enablePlugin(this) : this._client.disablePlugin(this);
 	}
 
-	setEnable(bool) {
+	setEnable (bool) {
 		bool ? this._client.enablePlugin(this) : this._client.disablePlugin(this);
 	}
 	/*

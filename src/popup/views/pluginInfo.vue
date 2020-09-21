@@ -43,9 +43,6 @@
 							</div>
 						</md-list-item>
 						<md-divider />
-						<md-subheader>固有設定</md-subheader>
-						<md-divider />
-
 					</md-list>
 				</md-app-content>
 			</md-app>
@@ -83,11 +80,20 @@ export default {
 	},
 	computed: {
 		enable: {
-			get: function() {
+			get: function () {
 				return this.plugin.config.enable;
 			},
 			set: function (newValue) {
 				this.plugin.setEnable(newValue);
+			}
+		},
+		otherConfigs: {
+			get: function () {
+				return this.plugin.config.otherConfigs;
+			},
+			set: function (newValue) {
+				this.plugin.config.otherConfigs = newValue;
+				this.$client.saveConfig;
 			}
 		}
 	}
