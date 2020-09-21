@@ -1,0 +1,42 @@
+.l-header .u-global-navigation {
+	background-color: var(--nav-bg-color);
+}
+
+a, a:hover, a:visited {
+	color: var(--nav-link-color);
+}
+
+body {
+	color: var(--body-text-color);
+	background-color: var(--body-bg-color);
+}
+
+.u-card {
+	background-color: var(--u-card-bg-color);
+	border-color: var(--divider-color);
+	color: var(--u-card-color);
+}
+
+.u-list.has-linked-children>li>a {
+	color: var(--u-list-color);
+}
+
+.typo-page-title {
+	color: var(--page-title-color);
+}
+
+.divider {
+	border-color: var(--divider-color);
+}
+
+.u-list-header {
+	border-color: var(--divider-color);
+}
+
+.u-list.has-linked-children>li {
+	border-color: var(--divider-color);
+}
+.u-breadcrumbs>li.current>a, .u-breadcrumbs>li.current:visited {
+	color: var(--breadcrumbs-list-color);
+
+}
