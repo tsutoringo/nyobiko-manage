@@ -3,7 +3,7 @@
 }
 
 .u-list.has-linked-children>li>a:hover {
-	color: var(--u-list-bg-hover);
+	background-color: var(--u-list-bg-hover);
 }
 .l-header .u-global-navigation>.u-global-navigation-pages li.nav>a {
 	color: var(--nav-link-color);
