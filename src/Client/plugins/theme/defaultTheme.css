@@ -2,7 +2,7 @@
 	background-color: var(--nav-bg-color);
 }
 
-a, a:hover, a:visited {
+.l-header .u-global-navigation>.u-global-navigation-pages li.nav>a {
 	color: var(--nav-link-color);
 }
 
