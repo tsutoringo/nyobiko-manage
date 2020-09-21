@@ -4,4 +4,13 @@
 
 	--nav-bg-color: var(--background-tertiary);
 	--u-card-bg-color: var(--background-tertiary);
+
+
+	--body-text-color: var(--normal-text);
+	--u-list-color: var(--normal-text);
+	--page-title-color: var(--normal-text);
+	--breadcrumbs-list-color: var(--normal-text);
+	--nav-link-color: var(--normal-text);
+
+	--body-bg-color: var(--background-primary);
 }
